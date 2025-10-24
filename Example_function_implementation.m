@@ -53,3 +53,4 @@ LPfreq = 4;
 
 [TO,HS,ftd] = gait_event_cwt(signal_a,signal_w,filter,Fs,LPfreq);
 
+
