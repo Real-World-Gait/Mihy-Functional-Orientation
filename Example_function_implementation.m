@@ -9,10 +9,11 @@
 % 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% Load example data
-load('example_data.mat')
 
 %% Example func_S2S_orientation implementation
+%load data
+load('Cal.mat')
+
 align = 1;
 a = Cal.Pelvis1.a;
 w = Cal.Pelvis1.w;
@@ -30,6 +31,9 @@ roti = Cal.rotiR;
 Shank1.R_bodyZ = func_S2S_orientation(align,a,w,gravi,roti);
 
 %% Example gait_ID_fft implementation
+%load data
+load('GaitTrials.mat')
+
 %Note that the GaitTrials data includes only a single sensor per segment
 signal = GaitTrials.RShank.w;
 Fs = 128;
@@ -38,6 +42,9 @@ windowsize = 5;
 [strt,nd,fig] = gait_ID_fft(signal,Fs,windowsize);
 
 %% Example gait_event_cwt implementation
+%load data
+load('BoutExample.mat')
+
 signal_a = BoutExample.RFoot.a_world;
 signal_w = BoutExample.RFoot.w_world;
 filter = 1;
