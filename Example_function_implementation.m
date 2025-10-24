@@ -12,7 +12,7 @@
 
 %% Example func_S2S_orientation implementation
 %load data
-load('Cal.mat')
+load('CalibrationData.mat')
 
 align = 1;
 a = Cal.Pelvis1.a;
@@ -45,10 +45,11 @@ windowsize = 5;
 %load data
 load('BoutExample.mat')
 
-signal_a = BoutExample.RFoot.a_world;
-signal_w = BoutExample.RFoot.w_world;
+signal_a = BoutExample.RFoot1.a_world;
+signal_w = BoutExample.RFoot1.w_world;
 filter = 1;
 Fs = 128;
 LPfreq = 4;
 
 [TO,HS,ftd] = gait_event_cwt(signal_a,signal_w,filter,Fs,LPfreq);
+
