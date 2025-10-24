@@ -25,7 +25,7 @@ This function provides drift-corrected linear velocity and displacement based on
 
 ## Data File Details:
 
-**1. Cal.mat**  
+**1. CalibrationData.mat**  
 A structure containing data for functional orientation procedures. rotiP contains the indices of functonal rotation for the pelvis sensors; rotiR contains the indices of functional rotation for the thigh, shank, and foot sensors. Sensor fields contain R_body matrices that were created from the included gravi and roti indices and the Cal sensor data using these algorithms.
 
 **2. GaitTrials.mat**  
