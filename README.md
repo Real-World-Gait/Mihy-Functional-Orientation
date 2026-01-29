@@ -1,6 +1,6 @@
 # Mihy-Functional-Orientation
 
-This repository includes the functions used for functional sensor-to-segment orientation, walking identification, and gait event identification as performed in Mihy et al., "A functional sensor-to-segment calibration method reduces the effects of varied sensor placement on estimates of segment angular excursion", as well as example data files from a single subject. Functions for performing zero-velocity update procedures as originally shared by Stephen Cain at a 2017 American Society of Biomechanics workshop are also included as the gait event function depends on these functions. Code files include details on the function inputs, outputs, and dependencies. Some instructions are also included below.
+This repository includes the functions used for functional sensor-to-segment orientation, walking identification, and gait event identification as performed in Mihy et al., "A functional sensor-to-segment calibration method reduces the effects of varied sensor placement on estimates of segment angular excursion" (2026 J Appl Biomech doi: 10.1123/jab.2025-0073) as well as example data files from a single subject. Functions for performing zero-velocity update procedures as originally shared by Stephen Cain at a 2017 American Society of Biomechanics workshop are also included as the gait event function depends on these functions. Code files include details on the function inputs, outputs, and dependencies. Some instructions are also included below.
 
 ## Code File Details:
 
